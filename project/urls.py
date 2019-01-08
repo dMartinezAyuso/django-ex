@@ -11,6 +11,7 @@ urlpatterns = [
 
     url(r'^$', index),
     url(r'^health$', health),
+    url(r'^people/', include('people.urls')),
     # url(r'^admin/', include(admin.site.urls)),
 ]
 
