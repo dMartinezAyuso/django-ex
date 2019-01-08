@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from django.core.exceptions import ValidationError
 from .models import People
-from my_innerapps_api.common.util.helper import DateHelper
+from project.common.util.helper import DateHelper
 
 def validate_start_and_end_dates(start_date, end_date, validation_type='serializer'):
     message = "Start date cannot precede end date"
