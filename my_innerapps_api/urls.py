@@ -26,6 +26,7 @@ from django.urls import path, re_path, include
 from django.contrib import admin
 # from rest_framework.schemas import get_schema_view
 # from rest_framework_swagger.renderers import SwaggerUIRenderer, OpenAPIRenderer
+from welcome.views import health
 from django.conf.urls import url
 
 # schema_view = get_schema_view(title='InnerApps API', renderer_classes=[OpenAPIRenderer, SwaggerUIRenderer])
@@ -33,6 +34,7 @@ from django.conf.urls import url
 urlpatterns = [
     path('admin/', admin.site.urls),
     # url('api/docs/', schema_view, name="docs"),
+    url(r'^health$', health),
     re_path('api/(?P<version>(v1|v2))/', include('people.urls')),
     re_path('api/rest-auth/', include('rest_auth.urls'))
 ]
