@@ -29,4 +29,5 @@ wrapt==1.10.11
 django-cors-headers==2.4.0
 gunicorn==19.9.0
 psycopg2-binary==2.7.5
-
+django-debug-toolbar==1.8
+whitenoise==3.3.1
