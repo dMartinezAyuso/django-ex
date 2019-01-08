@@ -1,5 +1,5 @@
 from django.db import models
-from project.common.util.helper import DateHelper
+from my_innerapps_api.common.util.helper import DateHelper
 
 
 class People(models.Model):
